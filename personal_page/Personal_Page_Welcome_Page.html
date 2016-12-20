@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width">
+    <title>Welcome Page</title>
+
+
+    <script src="../three.js-master/build/three.js"></script>
+    <link rel="stylesheet" href="Personal_Page.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header>
+    <div id="nav-anchor"></div>
+    <nav id= "nav"> <!--Primary Navigation-->
+        <div class="row">
+            <a href="#"><img class="circle logo" src="blah.png" width="50px"></a>
+            <ul class="main-nav js-main-nav">
+                <li><a id="main-anchor" href="#gallery">Home</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="github link.com"><span class="fafa-github"></span></a></li>
+                <li><a href="SOF link.com"><span class="fafa-github"></span></a></li>
+                <li><a href="git link.com"><span class="fafa-github"></span></a></li>
+                <li><a href="insta link.com"><span class="fafa-github"></span></a></li>
+            </ul>
+            <!--Mobile Navigation-->
+            <a class="mobile-nav-icon js-nav-icon"><i class="ion-navicon"></i></a>
+        </div>
+    </nav>
+    <h1>Vanessa Noble</h1>
+    <a href="#about"><img class ='circle1 js--scroll-about' src='http://s32.postimg.org/q5rurwbl1/star.png' width='100px'></a>
+</header>
+<!--sprite about me-->
+<section id="about">
+    <div class="row" id="js--about">
+        <div class="box">
+            <h3>Insert Sprite Bellow</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery -->
+<section id ="gallery" class='clearfix'>
+    <h1>PORTFOLIO</h1>
+        <div id= "portfolio-wrap">
+
+            <!--portfolio slider-->
+            <script type="text/javascript">
+                $( document ).ready(function( $ ) {
+                    $( '#example3' ).sliderPro({
+                        width: 960,
+                        height: 500,
+                        fade: true,
+                        arrows: true,
+                        buttons: false,
+                        fullScreen: true,
+                        shuffle: true,
+                        smallSize: 500,
+                        mediumSize: 1000,
+                        largeSize: 3000,
+                        thumbnailArrows: true,
+                        autoplay: false
+                    });
+                });
+            </script>
+
+            <div id="example3" class="slider-pro">
+                <div class="sp-slides">
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../img/spa.jpg"
+                             data-src="http://bqworks.com/slider-pro/images/image1_medium.jpg"
+                             data-small="http://bqworks.com/slider-pro/images/image1_small.jpg"
+                             data-medium="http://bqworks.com/slider-pro/images/image1_medium.jpg"
+                             data-large="http://bqworks.com/slider-pro/images/image1_large.jpg"
+                             data-retina="http://bqworks.com/slider-pro/images/image1_large.jpg"/>
+
+                        <p class="sp-layer sp-white sp-padding"
+                           data-horizontal="50" data-vertical="50"
+                           data-show-transition="left" data-show-delay="400">
+                            Lorem ipsum
+                        </p>
+
+                        <p class="sp-layer sp-black sp-padding"
+                           data-horizontal="180" data-vertical="50"
+                           data-show-transition="left" data-show-delay="600">
+                            dolor sit amet
+                        </p>
+
+                        <p class="sp-layer sp-white sp-padding"
+                           data-horizontal="315" data-vertical="50"
+                           data-show-transition="left" data-show-delay="800">
+                            consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../img/spb.jpeg"
+                             data-src="http://bqworks.com/slider-pro/images/image2_medium.jpg"
+                             data-small="http://bqworks.com/slider-pro/images/image2_small.jpg"
+                             data-medium="http://bqworks.com/slider-pro/images/image2_medium.jpg"
+                             data-large="http://bqworks.com/slider-pro/images/image2_large.jpg"
+                             data-retina="http://bqworks.com/slider-pro/images/image2_large.jpg"/>
+
+                        <h3 class="sp-layer sp-black sp-padding"
+                            data-horizontal="40" data-vertical="40"
+                            data-show-transition="left">
+                            Lorem ipsum dolor sit amet
+                        </h3>
+
+                        <p class="sp-layer sp-white sp-padding"
+                           data-horizontal="40" data-vertical="100"
+                           data-show-transition="left" data-show-delay="200">
+                            consectetur adipisicing elit
+                        </p>
+
+                        <p class="sp-layer sp-black sp-padding"
+                           data-horizontal="40" data-vertical="160" data-width="350"
+                           data-show-transition="left" data-show-delay="400">
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../img/spc.jpeg"
+                             data-src="http://bqworks.com/slider-pro/images/image3_medium.jpg"
+                             data-small="http://bqworks.com/slider-pro/images/image3_small.jpg"
+                             data-medium="http://bqworks.com/slider-pro/images/image3_medium.jpg"
+                             data-large="http://bqworks.com/slider-pro/images/image3_large.jpg"
+                             data-retina="http://bqworks.com/slider-pro/images/image3_large.jpg"/>
+
+                        <p class="sp-layer sp-white sp-padding"
+                           data-position="centerCenter" data-vertical="-50"
+                           data-show-transition="right" data-show-delay="500" >
+                            Lorem ipsum dolor sit amet
+                        </p>
+
+                        <p class="sp-layer sp-black sp-padding"
+                           data-position="centerCenter" data-vertical="50"
+                           data-show-transition="left" data-show-delay="700">
+                            consectetur adipisicing elit
+                        </p>
+                    </div>
+
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../img/spe.jpeg"
+                             data-src="http://bqworks.com/slider-pro/images/image4_medium.jpg"
+                             data-small="http://bqworks.com/slider-pro/images/image4_small.jpg"
+                             data-medium="http://bqworks.com/slider-pro/images/image4_medium.jpg"
+                             data-large="http://bqworks.com/slider-pro/images/image4_large.jpg"
+                             data-retina="http://bqworks.com/slider-pro/images/image4_large.jpg"/>
+
+                        <p class="sp-layer sp-black sp-padding"
+                           data-position="bottomLeft" data-vertical="0" data-width="100%"
+                           data-show-transition="up">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../img/spf.jpg"
+                             data-src="http://bqworks.com/slider-pro/images/image5_medium.jpg"
+                             data-small="http://bqworks.com/slider-pro/images/image5_small.jpg"
+                             data-medium="http://bqworks.com/slider-pro/images/image5_medium.jpg"
+                             data-large="http://bqworks.com/slider-pro/images/image5_large.jpg"
+                             data-retina="http://bqworks.com/slider-pro/images/image5_large.jpg"/>
+
+                        <p class="sp-layer sp-white sp-padding"
+                           data-vertical="5%" data-horizontal="5%" data-width="90%"
+                           data-show-transition="down" data-show-delay="400">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../img/spg.jpeg"
+                             data-src="http://bqworks.com/slider-pro/images/image6_medium.jpg"
+                             data-small="http://bqworks.com/slider-pro/images/image6_small.jpg"
+                             data-medium="http://bqworks.com/slider-pro/images/image6_medium.jpg"
+                             data-large="http://bqworks.com/slider-pro/images/image6_large.jpg"
+                             data-retina="http://bqworks.com/slider-pro/images/image6_large.jpg"/>
+
+                        <p class="sp-layer sp-white sp-padding"
+                           data-horizontal="10" data-vertical="10" data-width="300">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../img/sph.jpg"
+                             data-src="http://bqworks.com/slider-pro/images/image7_medium.jpg"
+                             data-small="http://bqworks.com/slider-pro/images/image7_small.jpg"
+                             data-medium="http://bqworks.com/slider-pro/images/image7_medium.jpg"
+                             data-large="http://bqworks.com/slider-pro/images/image7_large.jpg"
+                             data-retina="http://bqworks.com/slider-pro/images/image7_large.jpg"/>
+
+                        <p class="sp-layer sp-black sp-padding"
+                           data-position="bottomLeft" data-horizontal="5%" data-vertical="5%" data-width="90%"
+                           data-show-transition="up" data-show-delay="400">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../img/spi.jpeg"
+                             data-src="http://bqworks.com/slider-pro/images/image8_medium.jpg"
+                             data-small="http://bqworks.com/slider-pro/images/image8_small.jpg"
+                             data-medium="http://bqworks.com/slider-pro/images/image8_medium.jpg"
+                             data-large="http://bqworks.com/slider-pro/images/image8_large.jpg"
+                             data-retina="http://bqworks.com/slider-pro/images/image8_large.jpg"/>
+                    </div>
+
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../src/css/images/blank.gif"
+                             data-src="http://bqworks.com/slider-pro/images/image9_medium.jpg"
+                             data-small="http://bqworks.com/slider-pro/images/image9_small.jpg"
+                             data-medium="http://bqworks.com/slider-pro/images/image9_medium.jpg"
+                             data-large="http://bqworks.com/slider-pro/images/image9_large.jpg"
+                             data-retina="http://bqworks.com/slider-pro/images/image9_large.jpg"/>
+
+                        <p class="sp-layer sp-black sp-padding"
+                           data-horizontal="50" data-vertical="50"
+                           data-show-transition="down" data-show-delay="500">
+                            Lorem ipsum dolor sit amet
+                        </p>
+
+                        <p class="sp-layer sp-white sp-padding"
+                           data-horizontal="50" data-vertical="100"
+                           data-show-transition="up" data-show-delay="500">
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../src/css/images/blank.gif"
+                             data-src="http://bqworks.com/slider-pro/images/image10_medium.jpg"
+                             data-small="http://bqworks.com/slider-pro/images/image10_small.jpg"
+                             data-medium="http://bqworks.com/slider-pro/images/image10_medium.jpg"
+                             data-large="http://bqworks.com/slider-pro/images/image10_large.jpg"
+                             data-retina="http://bqworks.com/slider-pro/images/image10_large.jpg"/>
+                    </div>
+                </div>
+
+                <div class="sp-thumbnails">
+                    <img class="sp-thumbnail" src="http://bqworks.com/slider-pro/images/image1_thumbnail.jpg"/>
+                    <img class="sp-thumbnail" src="http://bqworks.com/slider-pro/images/image2_thumbnail.jpg"/>
+                    <img class="sp-thumbnail" src="http://bqworks.com/slider-pro/images/image3_thumbnail.jpg"/>
+                    <img class="sp-thumbnail" src="http://bqworks.com/slider-pro/images/image4_thumbnail.jpg"/>
+                    <img class="sp-thumbnail" src="http://bqworks.com/slider-pro/images/image5_thumbnail.jpg"/>
+                    <img class="sp-thumbnail" src="http://bqworks.com/slider-pro/images/image6_thumbnail.jpg"/>
+                    <img class="sp-thumbnail" src="http://bqworks.com/slider-pro/images/image7_thumbnail.jpg"/>
+                    <img class="sp-thumbnail" src="http://bqworks.com/slider-pro/images/image8_thumbnail.jpg"/>
+                    <img class="sp-thumbnail" src="http://bqworks.com/slider-pro/images/image9_thumbnail.jpg"/>
+                    <img class="sp-thumbnail" src="http://bqworks.com/slider-pro/images/image10_thumbnail.jpg"/>
+                </div>
+            </div>
+
+        </div> <!--end wrapper-->
+
+
+
+
+
+
+
+
+
+
+
+</section>
+<!--Stats-->
+<section id="stats" class="clearfix">
+    <h1>Experience</h1>
+    <div id="stats-wrap">
+        <div class="stats">
+            <img src="http://placehold.it/350x350">
+            <div class="caption">Technical Skills</div>
+        </div>
+        <div class ='stats'>
+            <img src="http://placehold.it/350x350">
+            <div class="caption">Experience</div>
+        </div>
+        <div class ='stats'>
+            <img src="http://placehold.it/350x350">
+            <div class="caption">My Ratio</div>
+        </div>
+    </div>
+
+
+
+</section>
+
+<!--blog Section-->
+<section id="blog" class="clearfix">
+    <h1>Side Notes</h1>
+        <div id="blog-wrap">
+            <div class="blog">
+
+                <!--insert cara for blog entries-->
+            </div>
+        </div>
+
+
+</section>
+
+
+
+<!-- Contact -->
+<section id='contact'>
+    <!-- FORM SECTION -->
+    <div class = 'row'>
+        <div class = 'col span-1-of-2'>
+            <h1>Contact Me</h1>
+            <h4 class='box'>Want to work with me? </br></br> Send me a short message and I'll get back to you soon!</h4>
+
+        </div>
+
+        <div class = 'col span-1-of-2'>
+            <div id= 'contact-form'>
+                <form id = 'form' onsubmit="return validateForm()">
+                    <div id = "messages">Hello</div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name"  /></div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" name="message" rows="1" placeholder="Brief project description"></textarea>
+                    </div>
+
+
+
+                    <button type="submit" id="submit" class="btn enterbtn" value='submit' >Submit</button>
+
+                </form>
+            </div>
+        </div> <!-- End Container -->
+    </div> <!-- End Row -->
+</section>
+
+
+
+
+
+<!-- FOOTER -->
+<footer class='myfooter'>
+
+    <!--Footer Nav -->
+    <div class='row'>
+        <ul class='footer-nav'>
+            <li><a href="#">Home</a></li>
+            <li><a href="#gallery">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+<script src="dist/js/jquery.sliderPro.min.js"></script>
+<script src="Personal_Page.js"></script>
+</body>
+
+</html>
