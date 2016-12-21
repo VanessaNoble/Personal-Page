@@ -1,3 +1,131 @@
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, summary {
+    display: block; }
+
+body {
+    text-align: center;
+    color: #5c3e52; }
+
+a {color: #bda3c1; text-decoration:none}
+
+.wrap {
+    font-family: "Ruthie", "fantasy";
+    width: 750px;
+    margin: 0 auto;
+    padding: 100px 0 100px;
+    overflow: hidden; }
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 200px;
+    font-size: 4.3em;
+    /*color: #111111;*/
+}
+
+.diamond {
+    display: block;
+    float: left;
+    color: #fff;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    text-decoration: none;
+    background: #5c3e52;
+    margin-left: 72px;
+    margin-top: -53px;
+    width: 178px;
+    height: 178px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg); }
+/*set the thumbnail image, positions images horiz. and hides the overflow shape*/
+.thumb {
+    background: url(../img/sprites.png);
+    position: relative;
+    overflow: hidden; }
+/*set images in thumbnail straight*/
+.thumb:after {
+    content: "";
+    position: absolute;
+    top: -36px;
+    left: -36px;
+    width: 250px;
+    height: 250px;
+    background: inherit;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    opacity: 1; }
+/*position first group of thumbails to the left*/
+.break {
+    clear: left;
+    margin-left: 36px; }
+/*position second group of thumbnails to the left of neighbor tumbnail */
+.intend {
+    clear: left;
+    margin-left: 161px; }
+/*will add a shadow to text on pop up text box*/
+p {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); }
+/*rotate text back to upright and center display portfolio without and hide other titles*/
+.diamond p {
+    position: relative;
+    line-height: 250px;
+    z-index: 1;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(-45deg) translate(-89px, 0);
+    -moz-transform: rotate(-45deg) translate(-89px, 0);
+    transform: rotate(-45deg) translate(-89px, 0);
+}
+/*hide titles until on hover*/
+.thumb p {
+    visibility: hidden; }
+/*position across sprite in diamond*/
+#coffee {
+    background-position: 0 0; }
+#port4{
+    background-position: -250px 0;
+    /*width: 250px;*/
+    /*height: 250px;*/
+}
+#port3{
+    background-position: -500px 0;
+    /*width: 250px;*/
+    /*height: 250px;*/
+}
+#portd{
+    background-position: -750px 0;
+    /*width: 250px;*/
+    /*height: 250px;*/
+}
+#port11{
+    background-position: -1000px 0;
+    /*width: 250px;*/
+    /*height: 250px;*/
+}
+#port5{
+    background-position: -1250px 0;
+    /*width: 250px;*/
+    /*height: 250px;*/
+}
+/*//adds a fade in to hover */
+.thumb:hover {
+    background: #a5b8a6;
+    transition: 5s;
+}
+.thumb.dark:hover {
+    background: #bda3c1; }
+
+.thumb:hover:after {
+    box-shadow: inset 0 0 100px #5c705d; }
+
+.thumb.dark:hover:after {
+    box-shadow: inset 0 0 100px #5c3e52; }
+
+.diamond:hover p {
+    visibility: visible; }
+
 html, body {
     font-family: 'Lato', sans-serif;
     letter-spacing: .5px;
@@ -11,7 +139,8 @@ body {
 }
 
 html {
-    /*background: url(https://images.unsplash.com/photo-1426840963626-ffdf2d7ef80b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=20e0823758cb576ea4f5c3c5b9a17328) no-repeat center center fixed;*/
+    /*maybe comment this out*/
+    background: url(https://images.unsplash.com/photo-1426840963626-ffdf2d7ef80b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=20e0823758cb576ea4f5c3c5b9a17328) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -96,7 +225,7 @@ nav {
 
 .main-nav {
     float:left;
-    height: 30px;
+    height: 20px;
 
 }
 
@@ -242,7 +371,7 @@ a.main-nav:active {
     float:left;
     position:relative;
     opacity: 1;
-    background-color: rgba (0,0,0,.4);
+    /*background-color: rgba (0,0,0,.4);*/
 
 }
 
@@ -388,7 +517,7 @@ textarea::-webkit-input-placeholder {
 .footer-nav {
     list-style: none;
     padding:0;
-    margin-left: 5px;
+    /*margin-right: 15px;*/
 
 }
 
@@ -617,4 +746,17 @@ textarea::-webkit-input-placeholder {
     fill: none;
     stroke: #000;
     shape-rendering: crispEdges;
-}  /*stats end project css*/
+}
+/*line graph*/
+/*.axis--x path {*/
+    /*display: none;*/
+/*}*/
+
+/*.line {*/
+    /*fill: none;*/
+    /*stroke: steelblue;*/
+    /*stroke-width: 1.5px;*/
+/*}*/
+
+
+/*stats end project css*/
