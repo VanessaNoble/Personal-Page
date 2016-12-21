@@ -30,7 +30,6 @@ function validateForm() {
 }
 
 
-
 // div slider
 $( document ).ready(function() {
     $( '#my-slider' ).sliderPro();
