@@ -2,16 +2,6 @@
  * Created by vanessamnoble on 12/20/16.
  */
 
-//Sticky Navbar
-// window.onscroll = function() {sticky_nav()};
-// function sticky_nav() {
-//     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
-//     {
-//         document.getElementById("nav").className = 'sticky';
-//     } else {   document.getElementById("nav").className = '';}
-// }
-
-
 function validateForm() {
     var x = document.forms["form"]["name"].value;
     var y = document.forms["form"]["message"].value;
