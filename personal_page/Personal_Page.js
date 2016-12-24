@@ -3,13 +3,13 @@
  */
 
 //Sticky Navbar
-window.onscroll = function() {sticky_nav()};
-function sticky_nav() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
-    {
-        document.getElementById("nav").className = 'sticky';
-    } else {   document.getElementById("nav").className = '';}
-}
+// window.onscroll = function() {sticky_nav()};
+// function sticky_nav() {
+//     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
+//     {
+//         document.getElementById("nav").className = 'sticky';
+//     } else {   document.getElementById("nav").className = '';}
+// }
 
 
 function validateForm() {
