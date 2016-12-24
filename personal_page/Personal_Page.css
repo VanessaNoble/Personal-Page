@@ -4,16 +4,8 @@ article, aside, details, figcaption, figure, footer, menu,section, summary {
 
 body {
     text-align: center;
+    position: static;
 }
-/*option to add background image here*/
-/*html {*/
-    /*!*maybe comment this out*!*/
-    /*background: url(https://images.unsplash.com/photo-1426840963626-ffdf2d7ef80b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=20e0823758cb576ea4f5c3c5b9a17328) no-repeat center center fixed;*/
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
-/*}*/
 
 .row {
     max-width: 1140px;
@@ -25,31 +17,15 @@ body {
     padding:0;
     box-sizing: border-box;
 }
-
-/*------------logo-------------------*/
-    .circle1{
-        border-radius:50%;
-        background-color: transparent;
-        border: 1px solid #fff;
-        transition: all 0.3s;
-        margin: 2%;
-    }
-
-    .circle1:hover {
-        background-color: rgba(255,255,255,.3);
-    }
-
-/*------------ HEADER ---------------*/
     header::after{
         display:block;
         position:fixed;
     }
 
     header{
-/*--Why 100vh? Using this will keep the image header height in 100% proportion to the viewport height. Using 100% will do the same but is not a good practice. Critical to know!!!------*/
     height:100vh;
-    /*background-image: url("../img/sph.jpg");*/
-    background-color: white;
+    background-image: url("../img/lemur.jpeg");
+    background-color: ghostwhite;
     background-size: cover;
 /*---Now this will center the header text---*/
     z-index: 2;
@@ -70,13 +46,13 @@ body {
         text-align: center;
         margin-bottom:-10px;
         z-index: 1;
-        font-size: 50px;
-        color: ghostwhite;
+        /*font-size: 50px;*/
+        /*color: ghostwhite;*/
         text-transform: uppercase;
-        text-shadow: -2px 2px 5px rgba(0,0,0,0.7);
+        /*text-shadow: -2px 2px 5px rgba(0,0,0,0.7);*/
         word-spacing: 4px;
-        letter-spacing: 1px;
-        font-weight: 100;
+        letter-spacing: 3px;
+        /*font-weight: 100;*/
 
     }
     .head-link {
@@ -105,7 +81,9 @@ body {
        width: 100%;
        height: 100%;
        position: absolute;
-       background: rgba(9,9,9, 0.7);
+        /*background: ghostwhite;*/
+        /*background-blend-mode: screen;*/
+       /*background: rgba(9,9,9, 0.9);*/
    }
     section{
 /*this encapsulates all the content below header*!*!*/
@@ -127,9 +105,9 @@ body {
         top: 0px;
         bottom: 0;
         left: -30px;
-        width: 165px;
+        width: 195px;
         padding: 10px;
-        background: #333;
+        background: #FFF;
         z-index:1;
     }
     .sidebar ul {
@@ -155,7 +133,7 @@ body {
     .main-nav li a:visited,
     .social-links li a:link,
     .social-links li a:visited {
-        color: #ddd1e7;
+        color: #cb9f11;
         text-transform: uppercase;
         font-size: 90%; /*20/18 */
         text-decoration: none;
@@ -169,8 +147,8 @@ body {
 
     .main-nav li a:hover,
     .main-nav li a:active {
-        border-bottom: 1px solid #fff;
-        border-top: 1px solid #fff;
+        border-bottom: 1px solid navy;
+        border-top: 1px solid navy;
         padding: 3px 0;
     }
 
@@ -222,11 +200,12 @@ body {
 /* ABOUT SECTION */
     #stats {
         background-color:transparent;
-        /*background-position: center;*/
+        background-position: center;
         text-align: center;
         margin-left: 11%;
         margin-right: 2%;
         padding: 3% 0 3% 0;
+
     }
 /*-----blog------*/
     #blog {
@@ -297,7 +276,7 @@ textarea::-webkit-input-placeholder {
 }
 
 #contact h1 {
-    color: #ddd1e7;
+    color: #ddd1e7; /*--or gold: #cb9f11--*/
     text-align: center;
 }
 
@@ -330,7 +309,7 @@ textarea::-webkit-input-placeholder {
     color:#fff;
     font-size: 80%;
     text-align: center;
-    background-color: #131313;
+    background-color: #FFF;
     padding-bottom: 1%;
 }
 
@@ -358,9 +337,7 @@ textarea::-webkit-input-placeholder {
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
-.circle logo{
-    margin-left: 10px;
-}
+
 .footer-nav li a:hover,
 .footer-nav li a:active {
     color: #fff;
