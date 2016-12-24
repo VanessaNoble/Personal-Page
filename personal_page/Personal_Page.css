@@ -19,111 +19,77 @@ body {
     max-width: 1140px;
     margin: 0 auto;
 }
-
-/* --------- Clearfix ------------ */
-.clearfix {zoom: 1;}
-.clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
-
-
-/*makes every element include the margin and padding you add to it */
+/*----makes every element include the margin and padding you add to it ----*/
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 
-/*-------- HEADINGS ----------*/
+/*------------logo-------------------*/
+    .circle1{
+        border-radius:50%;
+        background-color: transparent;
+        border: 1px solid #fff;
+        transition: all 0.3s;
+        margin: 2%;
+    }
 
-h5{
-    text-transform: uppercase;
-    font-family: 'Lato';
-    text-align: center;
-    font-weight: 100;
-}
-
-h5 {
-    word-spacing: 4px;
-    letter-spacing: 1px;
-}
-
+    .circle1:hover {
+        background-color: rgba(255,255,255,.3);
+    }
 
 /*------------ HEADER ---------------*/
+    header::after{
+        display:block;
+        position:fixed;
+    }
 
-/*header {*/
-    /*text-align: center;*/
-    /*padding-bottom: 5%;*/
-/*}*/
-
-/*header h1 {*/
-    /*padding: 5% 0;*/
-    /*font-size: 400%;*/
-    /*font-weight: 400;*/
-/*}*/
-
-/*.circle1{*/
-    /*border-radius:50%;*/
-    /*background-color: transparent;*/
-    /*border: 1px solid #fff;*/
-    /*transition: all 0.3s;*/
-    /*margin: 2%;*/
-/*}*/
-
-/*.circle1:hover {*/
-    /*background-color: rgba(255,255,255,.3);*/
-/*}*/
-
-header::after{
-    display:block;
-    position:fixed;
-}
-
-header{
-/*// Why 100vh? Using this will keep the image header height in 100% proportion to the viewport height. Using 100% will do the same but is not a good practice. Critical to know!!!*/
-height:100vh;  
-background-image: url("../img/sph.jpg");
-background-size: cover;
-/*// Now this will center the header text*/
-z-index: 2;
-display: flex;
-flex-flow: column;
-justify-content: center;
-position: relative;
-}
-
-.header-wrap{
+    header{
+/*--Why 100vh? Using this will keep the image header height in 100% proportion to the viewport height. Using 100% will do the same but is not a good practice. Critical to know!!!------*/
+    height:100vh;
+    /*background-image: url("../img/sph.jpg");*/
+    background-color: white;
+    background-size: cover;
+/*---Now this will center the header text---*/
+    z-index: 2;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     position: relative;
-}
+    }
 
-h5 {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin-bottom:-10px;
-    z-index: 1;
-    font-size: 50px;
-    color: ghostwhite;
-    text-shadow: -2px 2px 5px rgba(0,0,0,0.7);
+    .header-wrap{
+        position: relative;
+    }
 
-}
+    h5 {
+        font-family: 'Lato', sans-serif;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin-bottom:-10px;
+        z-index: 1;
+        font-size: 50px;
+        color: ghostwhite;
+        text-transform: uppercase;
+        text-shadow: -2px 2px 5px rgba(0,0,0,0.7);
+        word-spacing: 4px;
+        letter-spacing: 1px;
+        font-weight: 100;
 
-.head-link {
-    position: relative;
-    display: inline-block;
-    font-size: 25px;
-    text-decoration: overline;
-    color: ghostwhite;
-    margin: 20px auto 20px;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-/*// hover effect to intuit user to click on the link to enable scrolling*/
+    }
+    .head-link {
+        position: relative;
+        display: inline-block;
+        font-size: 25px;
+        text-decoration: overline;
+        color: ghostwhite;
+        margin: 20px auto 20px;
+        -webkit-font-smoothing: antialiased;
+        text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+/*--hover effect to intuit user to click on the link to enable scrolling--*/
    .head-link:hover{
        position: relative;
        display: block;
@@ -131,10 +97,8 @@ h5 {
        color:ghostwhite;
        text-decoration: none;
        margin: 20px auto 20px;}
-
-
-/*// Adding psudo class before to create an overlay on header background*/
-   header::before{
+    /*// Adding pseudo class before to create an overlay on header background*/
+    header::before{
        content:"";
        top: 0;
        left: 0;
@@ -143,232 +107,168 @@ h5 {
        position: absolute;
        background: rgba(9,9,9, 0.7);
    }
-
-.content{
+    section{
 /*this encapsulates all the content below header*!*!*/
-display: block;
+    display: block;
     position:relative;
-    left:10px;
-    padding:15px;
+    left:20px;
+    padding:55px;
     margin:0px;
     background-color: whitesmoke;
-}
-:hover {
-    color:rgba(89,89,89, 0.9);
-    text-decoration:none;
-}
-
-/*// next up is adding a sticky nav bar on the page*/
-   .sidebar{
-       display:block;
-       position:fixed;
-       top: 0px;
-       bottom: 0;
-       left: -30px;
-       width: 120px;
-       padding: 10px;
-       background: #333;
-       z-index:0;
-   }
-.sidebar ul {
-    cursor: pointer;
-    list-style: none;
-    color: whitesmoke;
-    -webkit-font-smoothing: antialiased;
-}
-:hover {
-    color:rgba(189,189,189, 0.7);
-    text-decoration:none;
-}
-
+    }
 /*------------ NAVIGATION -----------*/
-/*nav {*/
-    /*transition: all 0.4s ease;*/
-    /*height: 60px;*/
-/*}*/
-/*.logo {*/
-    /*float: left;*/
-    /*margin: .5%;*/
-/*}*/
+    nav {
+        transition: all 0.4s ease;
+        height: 60px;
+    }
+    .sidebar{
+        display:block;
+        position:fixed;
+        top: 0px;
+        bottom: 0;
+        left: -30px;
+        width: 165px;
+        padding: 10px;
+        background: #333;
+        z-index:1;
+    }
+    .sidebar ul {
+        cursor: pointer;
+        list-style: none;
+        color: whitesmoke;
+        -webkit-font-smoothing: antialiased;
+    }
 
-/*.main-nav {*/
-    /*float:left;*/
-    /*height: 20px;*/
+    .main-nav li {
+        display: inline-block;
+        margin-left: 50px;
+        margin-top:10%;
+    }
 
-/*}*/
+    .social-links li {
+        margin-left: 50px;
+        margin-right:5%;
+        margin-top: 10%;
+    }
 
-/*.main-nav li {*/
-    /*display: inline-block; !*makes side by side *!*/
-    /*margin-left: 50px;*/
-    /*margin-top:5%;*/
-/*}*/
+    .main-nav li a:link,
+    .main-nav li a:visited,
+    .social-links li a:link,
+    .social-links li a:visited {
+        color: #ddd1e7;
+        text-transform: uppercase;
+        font-size: 90%; /*20/18 */
+        text-decoration: none;
+        -webkit-transition: all .2s ease; /* Safari */
+        transition: all .09s ease;
+    }
 
-/*.social-links li {*/
-    /*display: inline-block; !*makes side by side *!*/
-    /*float:right;*/
-    /*margin-top:1.5%;*/
-    /*margin-right:3%;*/
-/*}*/
+    a.main-nav:active {
+        font-weight: 400;
+    }
 
-/*.main-nav li a:link,*/
-/*.main-nav li a:visited,*/
-/*.social-links li a:link,*/
-/*!*.social links li a:visited {*!*/
-    /*!*color: #ddd1e7;*!*/
-    /*!*text-transform: uppercase;*!*/
-    /*!*font-size: 90%; !*20/18 *!*!*/
-    /*!*text-decoration: none;*!*/
-    /*!*-webkit-transition: all .2s ease; !* Safari *!*!*/
-    /*!*transition: all .09s ease;*!*/
-/*!*}*!*/
+    .main-nav li a:hover,
+    .main-nav li a:active {
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+        padding: 3px 0;
+    }
 
-/*a.main-nav:active {*/
-    /*font-weight: 400;*/
-/*}*/
-
-/*.main-nav li a:hover,*/
-/*.main-nav li a:active {*/
-    /*border-bottom: 1px solid #fff;*/
-    /*border-top: 1px solid #fff;*/
-    /*padding: 3px 0;*/
-/*}*/
-
-/*.social-links li a:link,*/
-/*.social-links li a:visited {*/
-    /*color: #fff;*/
-    /*border-radius: 50%;*/
-    /*padding: 13px 16px;*/
-/*}*/
-
-/*.social-links li a:hover,*/
-/*.social-links li a:active {*/
-    /*color: #fff;*/
-    /*-webkit-box-shadow: 0px 0px 110px 17px rgba(255,255,255,.5);*/
-    /*-moz-box-shadow: 0px 0px 110px 17px rgba(255,255,255,.5);*/
-    /*box-shadow: 0px 0px 110px 17px rgba(255,255,255,.5);*/
-
-
-/*}*/
-
-/*!*--------- STICKY NAVBAR ------------*!*/
-/*.sticky {*/
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*width: 100%;*/
-    /*!*background:   url(https://images.unsplash.com/photo-1426840963626-ffdf2d7ef80b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=20e0823758cb576ea4f5c3c5b9a17328) no-repeat center center fixed;*!*/
-    /*z-index: 9999;*/
-/*}*/
-
-/*.sticky nav {*/
-    /*height: 60px;*/
-    /*font-size: 80%;*/
-    /*color:#fff;*/
-/*}*/
-
-
-/*--------- mobile navbar ----------*/
-
-/*.mobile-nav-icon{*/
-    /*position:absolute;*/
-    /*top: 1%;*/
-    /*right: 1%;*/
-    /*margin-right:2%;*/
-    /*cursor: pointer;*/
-    /*display:none;*/
-/*}*/
-
-/*.mobile-nav-icon i {*/
-    /*font-size: 200%;*/
-    /*color: #fff;*/
-/*}*/
-
-/*.sticky .mobile-nav-icon i {*/
-    /*font-size: 200%;*/
-    /*color: #5c5c5c;*/
-/*}*/
-
+    .social-links li a:link,
+    .social-links li a:visited {
+        color: #fff;
+        border-radius: 50%;
+        padding: 13px 16px;
+    }
 /*------------- BUTTONS ---------------*/
-.btn {
-    border: none;
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    background: none;
-    cursor: pointer;
-    display: inline-block;
-    margin: 1% 2%;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    outline: none;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
+    .btn {
+        border: none;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background: none;
+        cursor: pointer;
+        display: inline-block;
+        margin: 1% 2%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        outline: none;
+        position: relative;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
 
-.btn:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
+    .btn:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
 
 /*------------- SECTIONS -------------*/
-
-
 /* WORK/GALLERY SECTION */
-#gallery {
-    padding: 2% 0 5% 0;
-    background-color: rgba(0,0,0,.4);
-    text-align: center;
-}
+    #gallery {
+        background-color:transparent;
+        text-align: center;
+        margin-left: 11%;
+        margin-right: 2%;
+        padding: 3% 0 3% 0;
+    }
 
 /* ABOUT SECTION */
-#about {
-    background-position: center;
-    background-size: cover;
-    margin: 2%;
-    padding: 2% 0 5% 0;
-}
+    #stats {
+        background-color:transparent;
+        /*background-position: center;*/
+        text-align: center;
+        margin-left: 11%;
+        margin-right: 2%;
+        padding: 3% 0 3% 0;
+    }
+/*-----blog------*/
+    #blog {
+        background-color:transparent;
+        background-position: center;
+        text-align: center;
+        margin-left: 11%;
+        margin-right: 2%;
+        padding: 3% 0 3% 0;
+    }
+/* -------CONTACT SECTION --------*/
+    #contact h1 {
+        font-size: 300%;
+        margin-top: 3%;
+        margin-bottom: 2%;
+    }
+    #contact{
+        background-color:transparent;
+        /*background-position: center;*/
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 8%;
+        padding: 3% 0 3% 0;
+    }
+/* -------FORM--------- */
+    .form-control {
+        font-family: 'Lato', sans-serif;
+        color: #ddd1e7;
+    }
 
+    #contact-form {
+        width: 100%;
+        margin: 0 auto;
 
-/* CONTACT SECTION */
-/*if a background is added, uncomment this out*/
-/*#contact {*/
-    /*background-color:transparent;*/
-/*}*/
+    }
 
-#contact h1 {
-    font-size: 300%;
-    margin-top: 3%;
-    margin-bottom: 2%;
-}
+    #thankyou {
+        font-weight: 200;
+        font-size: 200%;
+        text-align: center;
 
-/* -------------------- */
-/* FORM */
-/* -------------------- */
-
-.form-control {
-    font-family: 'Lato', sans-serif;
-    color: #ddd1e7;
-}
-
-#contact-form {
-    width: 100%;
-    margin: 0 auto;
-
-}
-
-#thankyou {
-    font-weight: 200;
-    font-size: 200%;
-    text-align: center;
-
-}
+    }
 /*--------- Input Styles --------*/
 input[type=text],
 input[type=email],
@@ -437,13 +337,15 @@ textarea::-webkit-input-placeholder {
 .footer-nav {
     list-style: none;
     padding:0;
-    /*margin-right: 15px;*/
+    margin-right: 15px;
 
 }
 
 .footer-nav li {
     display: inline-block;
     padding: 15px 20px;
+
+
 }
 
 .footer-nav li a:link,
@@ -456,7 +358,9 @@ textarea::-webkit-input-placeholder {
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
-
+.circle logo{
+    margin-left: 10px;
+}
 .footer-nav li a:hover,
 .footer-nav li a:active {
     color: #fff;
