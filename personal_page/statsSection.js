@@ -10,7 +10,7 @@ var data = {
     series: [
         {
             label: '2012',
-            values: [4, 8, 15, 16, 23, 42]
+            values: [8, 10, 15, 16, 23, 42]
         },
         {
             label: '2013',
@@ -22,12 +22,12 @@ var data = {
         },]
 };
 
-var chartWidth       = 230,
-    barHeight        = 15,
+var chartWidth       = 140,
+    barHeight        = 13,
     groupHeight      = barHeight * data.series.length,
     gapBetweenGroups = 10,
-    spaceForLabels   = 110,
-    spaceForLegend   = 90;
+    spaceForLabels   = 260,
+    spaceForLegend   = 70;
 
 // Zip the series data together (first values, second values, etc.)
 var zippedData = [];
@@ -50,7 +50,7 @@ var y = d3.scale.linear()
 var yAxis = d3.svg.axis()
     .scale(y)
     .tickFormat('')
-    .tickSize(0)
+    .tickSize(1)
     .orient("left");
 
 // Specify the chart area and dimensions
@@ -147,14 +147,16 @@ function drawChart() {
         ['Pepperoni', 2]
     ]);
 
-    var piechart_options = {title:'Pie Chart: How Much Pizza I Ate Last Night',
-        width:420,
+    var piechart_options = {
+        // title:'Pie Chart: How Much Pizza I Ate Last Night',
+        width:450,
         height:450};
     var piechart = new google.visualization.PieChart(document.getElementById('piechart_div'));
     piechart.draw(data, piechart_options);
 
-    var barchart_options = {title:'Barchart: How Much Pizza I Ate Last Night',
-        width:420,
+    var barchart_options = {
+        // title:'Barchart: How Much Pizza I Ate Last Night',
+        width:350,
         height:450,
         legend: 'none'};
     var barchart = new google.visualization.BarChart(document.getElementById('barchart_div'));
